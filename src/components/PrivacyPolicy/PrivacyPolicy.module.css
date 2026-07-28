@@ -1,0 +1,189 @@
+.privacyPage {
+  background-color: #0b0c10;
+  min-height: 100vh;
+  color: #c5c6c7;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  
+    background-image: 
+    /* 1. التوهج البرتقالي الهادئ في النص */
+    radial-gradient(circle at 30% 50%, rgba(252, 74, 26, 0.18) 0%, rgba(252, 74, 26, 0.05) 35%, transparent 70%),
+    
+    /* 2. خطوط الشبكة الرأسية والأفقية */
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+
+  /* حجم التوهج (ملء كامل) وحجم شبكة المربعات (40px) */
+  background-size: 100% 100%, 60px 60px, 60px 60px;
+
+}
+
+.contentWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  
+}
+
+/* القفل الهيدر */
+.lockIcon {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(252, 74, 26, 0.12);
+  color: #fc4a1a;
+  border: 1px solid rgba(252, 74, 26, 0.25);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin: 0 auto 15px auto;
+  
+  
+}
+
+.mainTitle {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+  
+}
+
+.updateDate {
+  color: #7a808c;
+  font-size: 0.85rem;
+}
+
+/* الكارت التنبيهي */
+.alertBox {
+  background-color: rgba(252, 74, 26, 0.08);
+  border: 1px solid rgba(252, 74, 26, 0.2);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  
+}
+
+.shieldIcon {
+  color: #fc4a1a;
+  font-size: 1.5rem;
+}
+
+.alertTitle {
+  color: #fc4a1a;
+  font-weight: bold;
+  margin-bottom: 2px;
+  font-size: 0.95rem;
+  
+}
+
+.alertText {
+  color: #d1d5db;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* قائمة الأقسام */
+.sectionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sectionHeading {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* الأرقام البرتقالية الصغيرة */
+.badgeNum {
+  width: 22px;
+  height: 22px;
+  background-color: #fc4a1a;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionParagraph {
+  color: #9aa0a6;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* القوائم النقطية */
+.customList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.customList li {
+  position: relative;
+  padding-right: 20px;
+  color: #9aa0a6;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.customList li::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  background-color: #fc4a1a;
+  border-radius: 50%;
+}
+
+.customList strong {
+  color: #ffffff;
+}
+
+.contactEmail {
+  color: #fc4a1a;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.contactEmail:hover {
+  text-decoration: underline;
+}
+
+/* الفوتر */
+.pageFooter {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.termsLink {
+  color: #fc4a1a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.termsLink:hover {
+  text-decoration: underline;
+  
+}

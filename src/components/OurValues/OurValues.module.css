@@ -1,0 +1,67 @@
+.valuesSection {
+  background-color: #0b0c10;
+  padding: 60px 0 80px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* العنوان والأشرطة البرتقالية */
+.sectionTitle {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.orangeBar {
+  color: #fc4a1a;
+  margin: 0 4px;
+}
+
+.sectionDesc {
+  color: #7a808c;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* الكروت */
+.valueCard {
+  background-color: #16191e3d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(252, 74, 26, 0.3);
+  background: rgba(252, 75, 26, 0.144);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* الأيقونة برتقالية */
+.iconWrapper {
+  color: #fc4a1a;
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* العنوان والوصف داخل الكارت */
+.cardTitle {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  color: #8a8f99;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin: 0;
+}

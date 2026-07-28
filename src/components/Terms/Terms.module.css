@@ -1,0 +1,175 @@
+.termsPage {
+  background-color: #0b0c10;
+  min-height: 100vh;
+  color: #c5c6c7;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+.contentWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Breadcrumb */
+.breadcrumbLink {
+  color: #8a8f99;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbLink:hover {
+  color: #ffffff;
+}
+
+.activeBreadcrumb {
+  color: #fc4a1a;
+}
+
+/* أيقونة الوثيقة */
+.documentIcon {
+  width: 52px;
+  height: 52px;
+  background-color: rgba(252, 74, 26, 0.1);
+  color: #fc4a1a;
+  border: 1px solid rgba(252, 74, 26, 0.25);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 0 auto 15px auto;
+}
+
+.mainTitle {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.updateDate {
+  color: #7a808c;
+  font-size: 0.85rem;
+}
+
+/* بوكس إشعار مهم */
+.alertBox {
+  background-color: rgba(252, 74, 26, 0.05);
+  border: 1px solid rgba(252, 74, 26, 0.25);
+  border-radius: 12px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.alertIcon {
+  color: #fc4a1a;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.alertTitle {
+  color: #fc4a1a;
+  font-weight: bold;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.alertText {
+  color: #a0a5b0;
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* الأقسام والعناوين */
+.sectionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sectionHeading {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.badgeNum {
+  width: 22px;
+  height: 22px;
+  background-color: #fc4a1a;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionParagraph {
+  color: #8a8f99;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.subHeading {
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin: 12px 0 8px 0;
+}
+
+/* قائمة الـ Cross (علامات الـ X) */
+.crossList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.crossList li {
+  color: #8a8f99;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+}
+
+.contactEmail {
+  color: #fc4a1a;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.contactEmail:hover {
+  text-decoration: underline;
+}
+
+/* الفوتر */
+.pageFooter {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.privacyLink {
+  color: #fc4a1a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.privacyLink:hover {
+  text-decoration: underline;
+}

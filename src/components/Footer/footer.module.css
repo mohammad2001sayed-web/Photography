@@ -1,0 +1,172 @@
+.footer {
+  background-color: #0b0c10;
+  color: #8a8f99;
+  padding: 70px 0 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* اللوجو */
+.logoIcon {
+  background-color: #fc4a1a;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.logoText {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.brandDesc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #8a8f99;
+}
+
+/* أزرار التواصل */
+.socialBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: #16191e;
+  color: #8a8f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.socialBtn:hover {
+  background-color: #fc4a1a;
+  color: white;
+  border-color: #fc4a1a;
+  transform: translateY(-3px);
+}
+
+/* العناوين والداش البرتقالي */
+.footerHeading {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headingDash {
+  width: 12px;
+  height: 2px;
+  background-color: #fc4a1a;
+  display: inline-block;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 🎯 السحر هنا: التحكم في حركة السهم والهوفر 🎯 */
+
+.footerLink {
+  color: #8a8f99;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0px; /* المسافة تبدأ 0 ليكون السهم مخفي تماماً */
+  transition: all 0.3s ease;
+}
+
+.linkArrow {
+  font-size: 0.7rem;
+  color: #fc4a1a;
+  opacity: 0; /* مخفي افتراضياً */
+  transform: translateX(10px); /* يرجع لورا شوية بره الرؤية */
+  transition: all 0.3s ease;
+}
+
+/* عند الـ HOVER: */
+.footerLink:hover {
+  color: #fc4a1a; /* يتغير لون النص لبرتقالي */
+}
+
+.footerLink:hover .linkArrow {
+  opacity: 1; /* يظهر السهم */
+  transform: translateX(-5px); /* يتحرك للجهة اليمنى/الشمال حسب الـ RTL وبيدخل مكان النص */
+  margin-left: 6px; /* يبعد عن الكلمة شوية */
+}
+
+/* الفورم المصغرة */
+.smallText {
+  font-size: 0.8rem;
+  color: #8a8f99;
+  margin-bottom: 12px;
+}
+
+.miniInput {
+  background-color: #16191e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: white;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.miniInput:focus {
+  border-color: #fc4a1a;
+}
+
+.miniSubmitBtn {
+  background-color: #fc4a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.miniSubmitBtn:hover {
+  background-color: #e03e12;
+}
+
+/* الفوتر السفلي */
+.footerBottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.bottomLink {
+  color: #8a8f99;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.2s ease;
+}
+
+.bottomLink:hover {
+  color: white;
+}

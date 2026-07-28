@@ -1,0 +1,93 @@
+.exploreSection {
+  background-color: #0d0f12;
+  padding: 70px 0;
+}
+
+/* Badge علوية */
+.topBadge {
+  background-color: rgba(252, 74, 26, 0.1);
+  color: #fc4a1a;
+  border: 1px solid rgba(252, 74, 26, 0.2);
+  padding: 4px 14px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  background-color: #fc4a1a;
+  border-radius: 50%;
+}
+
+.sectionTitle {
+  font-size: 2.2rem;
+  margin-top: 10px;
+}
+
+/* تصميم الكارت وقابليته للضغط كـ Link */
+.categoryCard {
+  background-color: #16191e;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* لإلغاء خط الـ Link */
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+/* الأيقونة والنص داخل الكارت الافتراضي */
+.iconWrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background-color: rgba(252, 74, 26, 0.15);
+  color: #fc4a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+
+.categoryName {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.categoryCount {
+  color: #8a8f99;
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+/* 🎯 تأثير الـ HOVER البرتقالي الكامل عند مرور الماوس فقط */
+.categoryCard:hover {
+  background: linear-gradient(135deg, #fc4a1a 0%, #f76b1c 100%);
+  border-color: transparent;
+  box-shadow: 0 10px 25px rgba(252, 74, 26, 0.3);
+  transform: translateY(-4px);
+}
+
+.categoryCard:hover .iconWrapper {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.categoryCard:hover .categoryName {
+  color: #ffffff;
+}
+
+.categoryCard:hover .categoryCount {
+  color: rgba(255, 255, 255, 0.85);
+}

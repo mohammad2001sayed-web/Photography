@@ -1,0 +1,156 @@
+.aboutHeroSection {
+  background-color: #0b0c10;
+  padding: 80px 0 60px 0;
+  margin-top: 30px;
+  position: relative;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px; /* حجم مربعات الشبكة */
+  background-image: 
+    radial-gradient(
+      circle at 30% 50%,
+      rgba(252, 75, 26, 0.078) 0%,
+      rgba(252, 75, 26, 0) 35%,
+      transparent 70%
+    ),
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+
+  background-size:
+    100% 100%,
+    40px 40px,
+    40px 40px;
+}
+
+/* الشارة البرتقالية العلوية */
+.badgeWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(252, 74, 26, 0.12);
+  border: 1px solid rgba(252, 74, 26, 0.25);
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin-bottom: 24px;
+}
+
+.orangeDot {
+  width: 8px;
+  height: 8px;
+  background-color: #fc4a1a;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 0 8px #fc4a1a; /* توهج حول النقطة */
+  animation: pulse 1.8s infinite; /* تشغيل حركة النبض */
+}
+.orangeDott {
+  width: 8px;
+  height: 8px;
+  background-color: #fc4a1a;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0 0 8px #fc4a1a; /* توهج حول النقطة */
+  animation: pulse 3s infinite; /* تشغيل حركة النبض */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(252, 74, 26, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(252, 74, 26, 0); /* الحلقة بتكبر وتختفي */
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(252, 74, 26, 0);
+  }
+}
+
+
+.badgeText {
+  color: #fc4a1a;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* العنوان الرئيسي */
+.mainTitle {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.highlightText {
+  color: #fc4a1a;
+}
+
+/* الفقرة النصية */
+.description {
+  color: #8a8f99;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+}
+
+/* كروت الإحصائيات */
+.statCard {
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  padding: 16px 15px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+    
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(252, 74, 26, 0.4);
+}
+
+/* الأيقونة جوه الكارت */
+.iconBox {
+  color: #fc4a1a;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* الأرقام والنصوص داخل الكروت */
+.statNumber {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  color: #8a8f99;
+  font-size: 0.8rem;
+}
+
+/* Responsive للشاشات الصغيرة */
+@media (max-width: 576px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .statNumber {
+    font-size: 1.2rem;
+  }
+
+  .aboutHeroSection {
+    padding: 50px 0 40px 0;
+  }
+}

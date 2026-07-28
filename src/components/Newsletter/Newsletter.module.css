@@ -1,0 +1,154 @@
+.newsletterSection {
+  background-color: #0d0f12;
+  padding: 80px 0;
+}
+
+/* الكارت الأساسي المنتصف */
+.newsletterCard {
+  background: radial-gradient(circle at top, rgba(252, 74, 26, 0.12) 0%, #16191e 70%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 50px 30px;
+  max-width: 750px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* صندوق الأيقونة البرتقالي */
+.iconBox {
+  width: 52px;
+  height: 52px;
+  background-color: #fc4a1a;
+  color: #ffffff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 8px 20px rgba(252, 74, 26, 0.4);
+}
+
+/* العنوان والهايلايت */
+.title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.highlightText {
+  color: #fc4a1a;
+}
+
+.description {
+  color: #9aa0a6;
+  font-size: 0.95rem;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+/* فورم الاشتراك */
+.subscribeForm {
+  display: flex;
+  gap: 12px;
+  max-width: 520px;
+  margin: 0 auto 30px auto;
+}
+
+.emailInput {
+  flex: 1;
+  background-color: #0d0f12;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.emailInput:focus {
+  border-color: #fc4a1a;
+}
+
+.emailInput::placeholder {
+  color: #5f6570;
+}
+
+.submitBtn {
+  background-color: #fc4a1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: #e03e12;
+  transform: translateY(-2px);
+}
+
+/* الجزء السفلي مع الصور والنصوص */
+.footerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.subscribersCount {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatarsGroup {
+  display: flex;
+  align-items: center;
+}
+
+.avatarsGroup img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid #16191e;
+  margin-right: -8px; /* تداخل خفيف للصور */
+}
+
+.infoText {
+  color: #8a8f99;
+  font-size: 0.8rem;
+}
+
+.infoText strong {
+  color: #ffffff;
+}
+
+.dotSeparator {
+  color: #404550;
+  font-size: 0.8rem;
+}
+
+/* Responsive للشاشات الصغيرة */
+@media (max-width: 576px) {
+  .subscribeForm {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .newsletterCard {
+    padding: 35px 20px;
+  }
+}

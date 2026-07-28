@@ -1,0 +1,150 @@
+.authorsSection {
+  background-color: #0b0c10;
+  padding: 60px 0 80px 0;
+}
+
+/* الشارة العلوية */
+.badgeWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(252, 74, 26, 0.12);
+  border: 1px solid rgba(252, 74, 26, 0.25);
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin-bottom: 16px;
+}
+
+.orangeDot {
+  width: 6px;
+  height: 6px;
+  background-color: #fc4a1a;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(252, 74, 26, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(252, 74, 26, 0); /* الحلقة بتكبر وتختفي */
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(252, 74, 26, 0);
+  }
+}
+
+.badgeText {
+  color: #fc4a1a;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.mainTitle {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #8a8f99;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+
+/* كارت الكاتب */
+.authorCard {
+  background-color: #16191e30;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.authorCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(252, 74, 26, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* الحاوية والصورة */
+.avatarWrapper {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 16px auto;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* شارة التوثيق البرتقالية الصغيرة على الصورة */
+.verifiedBadge {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fc4a1a;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  border: 2px solid #16191e;
+}
+
+.authorName {
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.authorRole {
+  color: #fc4a1a;
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* أزرار السوشيال ميديا الثلاثية */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socialBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #20242c;
+  color: #8a8f99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.socialBtn:hover {
+  background-color: #fc4a1a;
+  color: #ffffff;
+}

@@ -31,7 +31,7 @@ const cbr = createHashRouter([
       },
       { path: "*", element: <NotFound /> },
     ],
-    baseName: "/Photography/",
+    
   },
   
 ]);

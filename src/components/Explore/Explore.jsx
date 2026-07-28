@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router"; // استيراد Link للتنقل
+import { Link } from "react-router-dom"; // استيراد Link للتنقل
 import styles from "./Explore.module.css";
 
 export default function Explore() {

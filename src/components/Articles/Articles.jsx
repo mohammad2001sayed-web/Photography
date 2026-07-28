@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import styles from "./Articles.module.css";
 import blogsData from "../../assets/posts.json"; // تأكد من اسم ملف الـ JSON ومساره
 

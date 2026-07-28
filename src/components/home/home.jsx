@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router"; // 1. استيراد Link
+import { Link } from "react-router-dom"; // 1. استيراد Link
 import styles from "./home.module.css"; // 2. استيراد ملف الـ CSS (تأكد من اسم ومسار الملف لديك)
 import Child from "../child/child";
 import Explore from "../Explore/Explore";

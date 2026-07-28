@@ -31,9 +31,7 @@ const cbr = createHashRouter([
       },
       { path: "*", element: <NotFound /> },
     ],
-    
   },
-  
 ]);
 
 export default function App() {

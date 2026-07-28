@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./about.module.css";
 import OurValues from "../OurValues/OurValues";
 import Authors from "../Authors/Authors";
+import Questions from "../Questions/Questions";
+import Footer from "..//Footer/Footer";
+
 
 export default function About() {
   // بيانات كروت الإحصائيات لسهولة التعديل عليها
@@ -80,6 +83,8 @@ export default function About() {
 
     <OurValues/>
     <Authors/>
+    <Questions />
+    <Footer />
     </>
 
     

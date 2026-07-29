@@ -1,0 +1,59 @@
+.paginationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 12px;
+}
+
+.paginationWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #12141a;
+  padding: 8px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pageBtn,
+.navBtn {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1a1d24;
+  color: #9ea3b0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.pageBtn:hover:not(.activePage),
+.navBtn:hover:not(:disabled) {
+  background-color: #262a34;
+  color: #ffffff;
+}
+
+/* الزر النشط البرتقالي */
+.activePage {
+  background: linear-gradient(135deg, #ff9432 0%, #ff5500 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(255, 85, 0, 0.35);
+}
+
+.navBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  color: #727785;
+  font-size: 0.85rem;
+}

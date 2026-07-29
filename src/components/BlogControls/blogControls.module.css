@@ -1,0 +1,101 @@
+/* الشاسيه الخارجي الـ Sticky */
+.stickyWrapper {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(11, 12, 16, 0.975); /* خلفية شبه شفافة */
+  backdrop-filter: blur(12px); /* تأثير الضبابية خلف الشريط Glassmorphism */
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* الترتيب الداخلي للشريط */
+.controlsBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap-reverse; /* يخلي البحث تحت والأزرار فوق في الشاشات الصغيرة */
+}
+
+/* حقل البحث */
+.searchBox {
+  position: relative;
+  min-width: 280px;
+  flex-grow: 1;
+  max-width: 380px;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #727785;
+  font-size: 0.9rem;
+}
+
+.searchInput {
+  width: 100%;
+  background-color: #16181e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 10px 40px 10px 16px; /* مسافة لـ Icon البحث على اليمين */
+  color: #ffffff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.searchInput:focus {
+  border-color: #ff7300;
+}
+
+/* أزرار التصنيفات */
+.categoryFilter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto; /* يسمح بالسحب الأفقي لو الشاشة صغيرة */
+  padding-bottom: 4px;
+  scrollbar-width: none; /* إخفاء سكرول بار المتصفح */
+}
+
+.categoryFilter::-webkit-scrollbar {
+  display: none;
+}
+
+.catBtn {
+  background-color: #16181e;
+  color: #9ea3b0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.catBtn:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* الزر النشط Selected */
+.catBtn.activeCat {
+  background: linear-gradient(135deg, #ff9432 0%, #ff5500 100%);
+  color: #ffffff;
+  border-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(255, 85, 0, 0.3);
+}
+
+/* التجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .searchBox {
+    max-width: 100%;
+  }
+}

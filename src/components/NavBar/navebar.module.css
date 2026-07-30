@@ -1,36 +1,32 @@
 .customNavbar {
-  background-color: #0b0c10; 
+  background-color: #0b0c10;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #1f2833; 
+  border-bottom: 1px solid #1f2833;
 }
 
-/* تنسيق اللوجو */
 .logoTitle {
   font-size: 1.25rem;
   line-height: 1;
-  color: #FF6900;
+  color: #ff6900;
 }
 
 .logoSubtitle {
   font-size: 0.75rem;
   margin-top: 2px;
-    color: #FF6900;
-
+  color: #ff6900;
 }
 
-/* تنسيق "كبسولة" الروابط في المنتصف */
 .navLinksPill {
   display: flex;
-  background-color: #1f2833; /* لون خلفية الكبسولة الرمادي الداكن */
-  border-radius: 50px; /* جعلها كبسولة */
-  padding: 5px; /* مسافة داخلية */
+  background-color: #1f2833;
+  border-radius: 50px;
+  padding: 5px;
 }
 
-/* تنسيق الروابط الفردية */
 .customNavLink {
-  color: #c5c6c7 !important; /* لون النص الرمادي الفاتح */
-  padding: 8px 20px !important; /* مسافة داخلية أفقية أكبر */
+  color: #c5c6c7 !important;
+  padding: 8px 20px !important;
   border-radius: 50px;
   transition: all 0.3s ease;
   font-size: 0.9rem;
@@ -40,26 +36,22 @@
   transition: all 0.3s ease;
 }
 
-/* الكلاس النشط عند اختيار الصفحة */
 .active {
   color: #ffffff !important;
-  background-color: #FF6900;
+  background-color: #ff6900;
   border-radius: 20px;
 }
 
-/* تنسيق الرابط النشط (Active) - الخلفية البرتقالية */
 .customNavLink:global(.active) {
-  background-color: #fc4a1a; /* لون برتقالي أساسي */
+  background-color: #fc4a1a;
   color: white !important;
   font-weight: bold;
 }
 
-/* تنسيق الـ Hover للروابط */
 .customNavLink:hover:not(:global(.active)) {
   color: white !important;
 }
 
-/* تنسيق عناصر جهة اليسار */
 .searchIcon {
   color: #c5c6c7;
   transition: color 0.3s ease;
@@ -70,7 +62,7 @@
 }
 
 .startReadingBtn {
-  background-color: #fc4a1a; /* لون برتقالي للزر */
+  background-color: #fc4a1a;
   border-color: #fc4a1a;
   padding: 8px 20px;
   font-size: 0.9rem;
@@ -81,24 +73,23 @@
   border-color: #ec400f;
 }
 
-/* تنسيق خاص للهامبرجر (شاشات الموبايل) */
 @media (max-width: 991px) {
   .navLinksPill {
     flex-direction: column;
     border-radius: 10px;
-    background-color: transparent; /* إزالة الكبسولة في القائمة المنسدلة */
+    background-color: transparent;
     width: 100%;
     text-align: center;
     margin-top: 15px;
   }
-  
+
   .leftSideItems {
     justify-content: center;
     margin-top: 15px;
     width: 100%;
   }
 }
-.logo{
+.logo {
   width: 50px;
   height: 50px;
 }

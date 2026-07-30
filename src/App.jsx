@@ -21,16 +21,6 @@ const cbr = createHashRouter([
       { path: "blog/:id", element: <BlogDetails /> }, // 👈 المسار الجديد لتفاصيل المقال
       { path: "Privacy", element: <PrivacyPolicy /> },
       { path: "Terms", element: <Terms /> },
-      {
-        path: "row",
-        element: <Row />,
-        children: [
-          { index: true, element: <h1>hello 1</h1> },
-          { path: "one", element: <h1>hello 1</h1> },
-          { path: "two", element: <h1>hello 2</h1> },
-          { path: "three", element: <h1>hello 3</h1> },
-        ],
-      },
       { path: "*", element: <NotFound /> },
     ],
   },

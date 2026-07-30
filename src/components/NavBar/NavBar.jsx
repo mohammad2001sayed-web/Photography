@@ -1,6 +1,6 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom"; // 👈 التعديل هنا: react-router-dom
 import foto from "../../assets/imgi_1_logo-GdqARQRt.png";
-import { Link, NavLink } from "react-router";
 import styles from "./navebar.module.css";
 
 function NavBar() {
@@ -11,9 +11,9 @@ function NavBar() {
       <div className="container">
         <Link
           className={`navbar-brand d-flex align-items-center gap-2 ${styles.logoArea}`}
-          to="/home"
+          to="/"
         >
-          <img className={styles.logo} src={foto} alt="" />
+          <img className={styles.logo} src={foto} alt="Logo" />
           <div className="d-flex flex-column align-items-start">
             <span className={`fw-bold text-light ${styles.logoTitle}`}>
               عدسة
@@ -39,16 +39,26 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className={`navbar-nav mx-auto ${styles.navLinksPill}`}>
             <li className="nav-item">
+              {/* 🌟 تم ضبط الـ Active هنا مع استخدام end أو الربط بـ / و /home */}
               <NavLink
-                className={`nav-link ${styles.customNavLink}`}
-                to="/home"
+                className={({ isActive }) =>
+                  `nav-link ${styles.customNavLink} ${
+                    isActive ? styles.active : ""
+                  }`
+                }
+                to="/"
+                end
               >
                 الرئيسية
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                className={`nav-link ${styles.customNavLink}`}
+                className={({ isActive }) =>
+                  `nav-link ${styles.customNavLink} ${
+                    isActive ? styles.active : ""
+                  }`
+                }
                 to="/Forkify"
               >
                 المدونة
@@ -56,7 +66,11 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                className={`nav-link ${styles.customNavLink}`}
+                className={({ isActive }) =>
+                  `nav-link ${styles.customNavLink} ${
+                    isActive ? styles.active : ""
+                  }`
+                }
                 to="/about"
               >
                 من نحن
@@ -68,7 +82,7 @@ function NavBar() {
             className={`d-flex align-items-center gap-3 ${styles.leftSideItems}`}
           >
             <Link
-              to="/blogs"
+              to="/Forkify"
               className={`text-light fs-5 ${styles.searchIcon}`}
               title="بحث"
             >
@@ -76,7 +90,7 @@ function NavBar() {
             </Link>
 
             <Link
-              to="/blogs"
+              to="/Forkify"
               className={`btn btn-primary rounded-pill ${styles.startReadingBtn}`}
             >
               ابدأ القراءة

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import styles from "./blogControls.module.css";
 
 // قائمة التصنيفات المتوفرة
@@ -17,12 +18,26 @@ export default function BlogControls({
   searchQuery,
   setSearchQuery,
 }) {
+  const [searchParams] = useSearchParams();
+  const categoryFromUrl = searchParams.get("category");
+
+  // 🌟 يقرأ التصنيف القادم في الرابط ويُفعّل الزرار المطابق له تلقائياً
+  useEffect(() => {
+    if (categoryFromUrl && categories.includes(categoryFromUrl)) {
+      setSelectedCategory(categoryFromUrl);
+
+      // التمرير السلس لنفس شريط الفلتر
+      const controlsElement = document.getElementById("blog-controls-bar");
+      if (controlsElement) {
+        controlsElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [categoryFromUrl, setSelectedCategory]);
+
   return (
-    <>
-        <div className={styles.stickyWrapper}>
+    <div id="blog-controls-bar" className={styles.stickyWrapper}>
       <div className="container">
         <div className={styles.controlsBar}>
-          
           {/* حقل البحث */}
           <div className={styles.searchBox}>
             <i className={`fa-solid fa-magnifying-glass ${styles.searchIcon}`}></i>
@@ -49,11 +64,8 @@ export default function BlogControls({
               </button>
             ))}
           </div>
-
         </div>
       </div>
     </div>
-   
-</>
   );
 }

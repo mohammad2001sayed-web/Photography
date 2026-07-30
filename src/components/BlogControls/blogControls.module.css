@@ -1,16 +1,14 @@
-/* الشاسيه الخارجي الـ Sticky */
 .stickyWrapper {
   position: sticky;
-  top: 0;
+  top: 80px; /* 👈 غيرها لارتفاع الـ Navbar بتاعك (مثلاً 70px أو 80px) */
+  align-self: flex-start; /* 👈 تمنع تمدد العناصر في Flex */
   z-index: 100;
-  background-color: rgba(11, 12, 16, 0.975); /* خلفية شبه شفافة */
-  backdrop-filter: blur(12px); /* تأثير الضبابية خلف الشريط Glassmorphism */
+  background-color: rgba(11, 12, 16, 0.975);
+  backdrop-filter: blur(12px);
   padding: 16px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.3s ease;
-}
-
-/* الترتيب الداخلي للشريط */
+}/* الترتيب الداخلي للشريط */
 .controlsBar {
   display: flex;
   align-items: center;

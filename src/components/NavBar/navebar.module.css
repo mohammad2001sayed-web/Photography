@@ -1,9 +1,8 @@
-/* تنسيق الـ NavBar ككل */
 .customNavbar {
-  background-color: #0b0c10; /* لون خلفية داكن جداً قريب من الصورة */
+  background-color: #0b0c10; 
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #1f2833; /* خط سفلي دقيق */
+  border-bottom: 1px solid #1f2833; 
 }
 
 /* تنسيق اللوجو */
@@ -35,6 +34,17 @@
   border-radius: 50px;
   transition: all 0.3s ease;
   font-size: 0.9rem;
+}
+.customNavLink {
+  color: #a1a1aa;
+  transition: all 0.3s ease;
+}
+
+/* الكلاس النشط عند اختيار الصفحة */
+.active {
+  color: #ffffff !important;
+  background-color: #FF6900;
+  border-radius: 20px;
 }
 
 /* تنسيق الرابط النشط (Active) - الخلفية البرتقالية */

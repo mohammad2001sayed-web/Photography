@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // استيراد Link للتنقل
+import { Link } from "react-router-dom";
 import styles from "./Explore.module.css";
 
 export default function Explore() {
@@ -33,7 +33,11 @@ export default function Explore() {
         <div className="row g-3 justify-content-center">
           {categories.map((cat) => (
             <div key={cat.id} className="col-12 col-sm-6 col-md-4 col-lg-2">
-              <Link to="/forkify" className={styles.categoryCard}>
+              {/* 🌟 تم تعديل الرابط ليمرر اسم التصنيف في الـ Query Parameter */}
+              <Link
+                to={`/forkify?category=${encodeURIComponent(cat.name)}`}
+                className={styles.categoryCard}
+              >
                 <div className={styles.iconWrapper}>
                   <i className={`fa-solid ${cat.icon}`}></i>
                 </div>

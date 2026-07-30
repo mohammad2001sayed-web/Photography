@@ -29,10 +29,10 @@ function Child() {
             <h2 className={`fw-bold text-light mt-2 ${styles.sectionTitle}`}>
               مقالات مختارة
             </h2>
-            <p className="text-muted small m-0">محتوى ينتقى لبدء رحلة تعلمك</p>
+            <p className="text-secondary fw-bolder m-0">محتوى ينتقى لبدء رحلة تعلمك</p>
           </div>
 
-          <Link to="/blogs" className={`btn ${styles.viewAllBtn}`}>
+          <Link to="/Forkify" className={`btn ${styles.viewAllBtn}`}>
             عرض الكل <i className="fa-solid fa-chevron-left ms-1"></i>
           </Link>
         </div>
@@ -78,7 +78,7 @@ function Child() {
                         </div>
                       </div>
 
-                      <Link to={`/blogs/${post.id}`} className={styles.readLink}>
+                      <Link to={`/blog/${post.id}`} className={styles.readLink}>
                         اقرأ المقال <i className="fa-solid fa-arrow-left ms-1"></i>
                       </Link>
                     </div>

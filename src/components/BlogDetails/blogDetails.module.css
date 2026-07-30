@@ -1,0 +1,326 @@
+.detailsPage {
+  background-color: #0b0c10;
+  color: #c5c6c7;
+  min-height: 100vh;
+}
+
+/* 1. الهيرو */
+.heroSection {
+  min-height: 420px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 50px 0 35px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.heroContent {
+  max-width: 900px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+}
+
+.breadcrumb a {
+  color: #9ea3b0;
+  text-decoration: none;
+}
+
+.activeCategory {
+  color: #ff7300;
+  font-weight: 600;
+}
+
+.metaBadgeGroup {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.categoryTag {
+  background: linear-gradient(135deg, #ff9432 0%, #ff5500 100%);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.metaItem {
+  color: #9ea3b0;
+  font-size: 0.85rem;
+}
+
+.mainTitle {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.35;
+  margin-bottom: 20px;
+}
+
+.authorCardHeader {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(22, 24, 30, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 6px 16px 6px 8px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.authorAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.authorName {
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.authorRole {
+  color: #727785;
+  font-size: 0.75rem;
+}
+
+/* 2. الجانب الأيسر - Sticky Sidebar */
+.stickySidebar {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebarCard {
+  background-color: #12141a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.sidebarTitle {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.tocList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tocList a {
+  color: #8c92a4;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.tocList a:hover {
+  color: #ff7300;
+  transform: translateX(-4px);
+}
+
+.statBox {
+  background-color: #12141a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+}
+
+.newsletterCard {
+  background-color: #12141a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.newsletterIcon {
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 115, 0, 0.15);
+  color: #ff7300;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+  font-size: 1.2rem;
+}
+
+.subscribeBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #ff9432 0%, #ff5500 100%);
+  color: #fff;
+  border: none;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.subscribeBtn:hover {
+  opacity: 0.9;
+}
+
+/* 3. الجانب الأيمن - المحتوى الرئيسي */
+.mainArticleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.quoteBox {
+  border-right: 4px solid #ff7300;
+  background-color: rgba(255, 115, 0, 0.05);
+  padding: 16px 20px;
+  border-radius: 0 10px 10px 0;
+  color: #e5e6e8;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.paragraph {
+  line-height: 1.8;
+  font-size: 0.95rem;
+  color: #a0a5b5;
+}
+
+.contentBlock {
+  background-color: #12141a;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.contentBlock h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contentBlock p {
+  color: #8c92a4;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.tagsContainer,
+.shareContainer {
+  background-color: #12141a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tagLabel,
+.shareLabel {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.tagBadge {
+  background-color: #1a1d24;
+  color: #8c92a4;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.shareBtns {
+  display: flex;
+  gap: 8px;
+}
+
+.shareBtns button {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1a1d24;
+  color: #8c92a4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.shareBtns button:hover {
+  background-color: #ff7300;
+  color: #fff;
+}
+
+.bottomAuthorBox {
+  background-color: #12141a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bottomAuthorImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.authorTag {
+  color: #ff7300;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.bottomAuthorName {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 2px 0;
+}
+
+.bottomAuthorBio {
+  color: #727785;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .stickySidebar {
+    position: static;
+  }
+}

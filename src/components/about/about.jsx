@@ -84,7 +84,6 @@ export default function About() {
     <OurValues/>
     <Authors/>
     <Questions />
-    <Footer />
     </>
 
     

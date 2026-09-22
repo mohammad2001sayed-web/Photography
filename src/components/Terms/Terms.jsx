@@ -137,7 +137,7 @@ export default function Terms() {
 
           {/* الفوتر السفلي */}
           <div className={styles.pageFooter}>
-            <p className="m-0 text-muted small">
+            <p className="m-0  small">
               باستخدامك موقعنا، فإنك توافق على شروط الخدمة هذه. انظر أيضاً{" "}
               <Link to="/privacy" className={styles.privacyLink}>
                 سياسة الخصوصية
@@ -149,7 +149,6 @@ export default function Terms() {
       </div>
     </div>
 
-    <Footer />
     
     </>
   );

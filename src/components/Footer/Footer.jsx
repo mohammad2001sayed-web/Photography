@@ -32,7 +32,7 @@ export default function Footer() {
             </h5>
             <ul className={styles.linksList}>
               <li>
-                <Link to="/forkify" className={styles.footerLink}>
+                <Link to="/home" className={styles.footerLink}>
                   <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
                   الرئيسية
                 </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/forkify" className={styles.footerLink}>
+                <Link to="/about" className={styles.footerLink}>
                   <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
                   من نحن
                 </Link>
@@ -53,38 +53,49 @@ export default function Footer() {
           </div>
 
           {/* العمود الثالث: التصنيفات */}
-          <div className="col-6 col-md-3 col-lg-2">
-            <h5 className={styles.footerHeading}>
-              <span className={styles.headingDash}></span> التصنيفات
-            </h5>
-            <ul className={styles.linksList}>
-              <li>
-                <Link to="/forkify" className={styles.footerLink}>
-                  <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
-                  إضاءة
-                </Link>
-              </li>
-              <li>
-                <Link to="/forkify" className={styles.footerLink}>
-                  <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
-                  بورتريه
-                </Link>
-              </li>
-              <li>
-                <Link to="/forkify" className={styles.footerLink}>
-                  <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
-                  مناظر طبيعية
-                </Link>
-              </li>
-              <li>
-                <Link to="/forkify" className={styles.footerLink}>
-                  <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
-                  تقنيات
-                </Link>
-              </li>
-            </ul>
-          </div>
-
+<div className="col-6 col-md-3 col-lg-2">
+  <h5 className={styles.footerHeading}>
+    <span className={styles.headingDash}></span> التصنيفات
+  </h5>
+  <ul className={styles.linksList}>
+    <li>
+      <Link
+        to={`/forkify?category=${encodeURIComponent("إضاءة")}`}
+        className={styles.footerLink}
+      >
+        <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
+        إضاءة
+      </Link>
+    </li>
+    <li>
+      <Link
+        to={`/forkify?category=${encodeURIComponent("بورتريه")}`}
+        className={styles.footerLink}
+      >
+        <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
+        بورتريه
+      </Link>
+    </li>
+    <li>
+      <Link
+        to={`/forkify?category=${encodeURIComponent("مناظر طبيعية")}`}
+        className={styles.footerLink}
+      >
+        <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
+        مناظر طبيعية
+      </Link>
+    </li>
+    <li>
+      <Link
+        to={`/forkify?category=${encodeURIComponent("تقنيات")}`}
+        className={styles.footerLink}
+      >
+        <i className={`fa-solid fa-chevron-left ${styles.linkArrow}`}></i>
+        تقنيات
+      </Link>
+    </li>
+  </ul>
+</div>
           {/* العمود الرابع: إبقى على اطلاع */}
           <div className="col-12 col-md-6 col-lg-3">
             <h5 className={styles.footerHeading}>

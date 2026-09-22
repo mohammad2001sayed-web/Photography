@@ -83,7 +83,7 @@ export default function Home() {
       <Explore />
       <Articles />
       <Newsletter />
-      <Footer />
+     
     </>
   );
 }

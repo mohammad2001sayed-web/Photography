@@ -1,7 +1,7 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 import styles from "./Terms.module.css";
-import Footer from "../Footer/Footer";
+
 
 export default function Terms() {
   return (

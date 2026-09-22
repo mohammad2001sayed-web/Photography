@@ -1,4 +1,4 @@
-import React from "react";
+
 import styles from "./OurValues.module.css";
 
 export default function OurValues() {

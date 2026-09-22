@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Link, NavLink } from "react-router-dom"; // 👈 التعديل هنا: react-router-dom
 import foto from "../../assets/imgi_1_logo-GdqARQRt.png";
 import styles from "./navebar.module.css";

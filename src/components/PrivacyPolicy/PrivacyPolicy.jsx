@@ -1,7 +1,7 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 import styles from "./PrivacyPolicy.module.css";
-import Footer from "../Footer/Footer";
+
 
 export default function PrivacyPolicy() {
   return (

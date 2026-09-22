@@ -3,7 +3,7 @@ import foto2 from "../../assets/imgi_15_photo-1500648767791-00dcc994a43e.jpg";
 import foto3 from "../../assets/imgi_16_photo-1472099645785-5658abf4ff4e.jpg";
 
 
-import React, { useState } from "react";
+import  { useState } from "react";
 import styles from "./Newsletter.module.css";
 
 export default function Newsletter() {

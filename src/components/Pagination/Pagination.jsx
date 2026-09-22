@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./pagination.module.css";
+
+import styles from "./Pagination.module.css";
 
 export default function Pagination({ currentPage, totalPages, onPageChange }) {
   if (totalPages <= 1) return null;
